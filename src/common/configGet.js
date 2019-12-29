@@ -1,5 +1,3 @@
-const configGet = [
-    { path: '/users', file: 'user.json'}
-]
+const configGet = [{ path: '/users', file: 'user.json' }];
 
-export { configGet }
+export { configGet };
