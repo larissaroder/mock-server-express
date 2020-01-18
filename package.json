@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start:dev": "NODE_ENV=development nodemon --exec babel-node ./src/server.js",
-    "start": "NODE_ENV=production babel-node ./src/server.js",
+    "start:dev": "PORT=3000 NODE_ENV=development nodemon --exec babel-node ./src/server.js",
+    "start": "PORT=8000 NODE_ENV=production babel-node ./src/server.js",
     "lint": "eslint 'src/**/*.js' --fix",
     "format": "prettier-eslint 'server/**/*.{js,json}' --write",
     "start:docker": "docker-compose up -d"
